@@ -8,7 +8,7 @@ type PostStore = {
   reset: () => void;
 };
 
-export const usePostStore = create<PostStore>((set, get) => {
+export const usePostStore = create<PostStore>((set) => {
   let _postMap = new Map<PostId, Post>();
 
   return {
